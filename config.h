@@ -6,6 +6,11 @@
 void activate_lower(int);
 void activate_raise(int);
 
+/*
+ * This makes it easier for fast typists to use dual-function keys. Without this, if you let go of a held key inside the tapping term, it won't register.
+ */
+#define PERMISSIVE_HOLD
+
 #define MUSIC_MASK (keycode != KC_NO)
 
 /*
