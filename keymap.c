@@ -272,6 +272,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 void matrix_init_user() {
   set_single_persistent_default_layer(_QWERTY);
+  layer_on(_COLEMAK);
 }
 
 void activate_lower(int activate) {
